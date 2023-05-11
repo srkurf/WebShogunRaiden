@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Genshin Impact | Informacion de juego</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="shortcut icon" href="./img/protogema.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="#" class="logo"
+          ><img src="./img/genshinwhite.png" alt="logo" width="100px" />
+        </a>
+        <ul class="navegacion">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Noticias</a></li>
+          <li><a href="#">Personajes</a></li>
+          <li><a href="#">Recursos</a></li>
+          <li><a href="#">HoYoLAB</a></li>
+          <li><a href="#">Recarga</a></li>
+          <li><a href="#">Canjear Codigo</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Buscar" />
+          <button class="iconsearch"><span class="material-icons">search</span></button>
+        </div>
+      </header>
+      <section class="banner">
+        <img src="./img/shogun.jpg" alt="shogun" class="bg" />
+        <spam class="sombraImg"></spam>
+        <div class="contenido">
+          <div class="textPrincipal">
+            <img src="./img/electro.png" alt="proto" class="elemento" />
+            <h2>Shogun Raiden</h2>
+          </div>
+          <h4>
+            <span>2023</span>
+            <span><i>16+</i></span>
+            <span>Video Juego</span>
+          </h4>
+          <p>
+            Es un videojuego de rol de acción de mundo abierto y gratuito, con
+            una mecánica de monetización de gacha para conseguir elementos
+            adicionales como personajes especiales y armas.
+          </p>
+          <div class="botones">
+            <a href="#">Jugar</a>
+            <a href="#">Informacion</a>
+          </div>
+        </div>
+        <a href="#" class="play" onclick="reproducirVideo();"
+          ><img src="./img/image.png" alt="video" />Ver Video</a
+        >
+      </section>
+      <section class="unvideo">
+        <video src="./img/Character Demo - Raiden Shogun_ Judgment of Euthymia _ Genshin Impact.mp4" controls="true"></video>
+        <img class="close" src="./img/image (1).png" alt="cerrar" onclick="reproducirVideo();">
+      </section>
+    </main>
+    <script>
+      function reproducirVideo(){
+        const verVideo = document.querySelector(".unvideo");
+        const inframe = document.querySelector("video");
+        verVideo.classList.toggle("active");
+        video.currentTime=0;
+        video.pause();
+      }
+    </script>
+  </body>
+</html>
